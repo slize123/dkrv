@@ -9,8 +9,8 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 # Путь к файлу базы данных
-DB_PATH = '/var/data/licenses.db'  # Путь должен быть ВНЕ папки с кодом
-DATA_DIR = '/var/data'
+DB_PATH = 'licenses.db'
+DATA_DIR = '.'
 
 # Создаём папку для данных, если её нет
 os.makedirs(DATA_DIR, exist_ok=True)
