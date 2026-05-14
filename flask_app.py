@@ -12,9 +12,6 @@ app = Flask(__name__)
 DB_PATH = 'licenses.db'
 DATA_DIR = '.'
 
-# Создаём папку для данных, если её нет
-os.makedirs(DATA_DIR, exist_ok=True)
-
 def init_db():
     """Создаёт таблицу для ключей, если её ещё нет."""
     conn = sqlite3.connect(DB_PATH)
